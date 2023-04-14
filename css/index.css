@@ -57,6 +57,14 @@ transform: translateX(-200%);
 transform: translateX(-300%);
 }
 
+.card > input:nth-child(5):checked ~ .slider-content{
+transform: translateX(-400%);
+}
+
+.card > input:nth-child(6):checked ~ .slider-content{
+transform: translateX(-500%);
+}
+
 .org h2{
   text-align: center;
   margin-top: 100px;
