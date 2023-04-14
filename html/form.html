@@ -34,7 +34,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">Habilidades</a>
+            <a href="https://www.linkedin.com/in/victor-thiago-482630210/">Linkedin</a>
             <input type="checkbox" id="btn-2">
       </nav>
   
@@ -49,11 +49,11 @@
       <section>
         <div class="form">
         <form action="../php/salvar_formulario.php" method="post">
-            <label for="nome" id="label">Digite seu nome:</label>
-            <input type="text" name="nome" id="nomeid" class="nome">
+          <label for="nome" id="labeln">Digite seu nome:</label>
+            <input type="text" name="nome" id="nomeid" class="nome" placeholder="Nome">
                 <br>
             <label for="email" id="label">Digite seu e-mail:</label>
-            <input type="email" name="email" class="email">
+            <input type="email" name="email" class="email" placeholder="E-mail">
                 <br>
             <label for="data" id="label">Digite sua idade:</label>
             <input type="date" name="data" class="data">
@@ -62,7 +62,7 @@
             <br>
             
             <input type="radio" name="gostou" value="Spotify" class="spotify">
-            <label for="spotify">Clone do Spotify</label>
+            <label for="spotify">Calculadora</label>
             <br>
             <input type="radio" name="gostou" value="Formulário" class="formul">
             <label for="formul">Formulário</label>
@@ -81,11 +81,11 @@
 });
             </script>
 
-            <label for="" id="label">Qual outro clone eu poderia fazer?</label>
+            <label for="" id="label">Qual projeto de clone você gostaria que eu fizesse?</label>
             <input type="text" name="clone" class="clone">
             <br>
 
-            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar"/>
+            <button class="btn" name="acessar" onclick="Enviar()" type="submit"><span class="bt">Enviar</span></button>
         </form>
     </div>
       </section>
