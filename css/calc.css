@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -20,10 +20,12 @@ body{
 	color: cyan;
 	border: solid cyan 2px;
 }
+
 table{
 	display: flex;
 	justify-content: center;
 }
+
 form fieldset{
 	margin:10px auto 10px auto;
 	width:30%;
@@ -34,12 +36,14 @@ form fieldset{
 	background-color: #000;
 	color: cyan;
 }
+
 form input{
 	width:100%;
 	border:solid #ccc 1px;
 	font-size:11px;
 	margin-bottom:10px;
 }
+
 form input.num{
 	display:block;
 	width:60px;
@@ -52,6 +56,11 @@ form input.num{
 	border: solid #131212 1px;
 	margin: 3px;
 }
+
+form input.num:hover{
+  background-color: #000;
+}
+
 form input.oper{
 	display:block;
 	width:60px;
@@ -64,6 +73,11 @@ form input.oper{
 	border: solid #131212 1px;
 	margin: 3px;
 }
+
+form input.oper:hover{
+  background-color: #000;
+}
+
 legend{
 	font-size:30px;
 }
@@ -164,7 +178,7 @@ nav{
     }
     nav .logo{
       padding-left: 30px;
-      width: 100%;
+      
     }
     .show + a, ul{
       display: none;
