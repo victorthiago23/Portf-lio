@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <link rel="icon" type="image/png" href="img/victor-edit.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/051588164a.js" crossorigin="anonymous"></script>
+    <script src="file:///E:/jquery.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Victor Thiago</div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="index.html" translate="no">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Projetos +</label>
+          <a href="#">Projetos</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="html/calculadora.html">Calculadora</a></li>
+            <li><a href="html/form.html">Formulário</a></li>
+            <li><a href="html/produto.html">Página de Produto</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Habilidades</a>
+          <input type="checkbox" id="btn-2">
+        </li>
+    </nav>
+
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+<section class="circle">
+  <img src="img/eu.webp">
+  <div>
+  <p>Prazer, meu nome é Victor Thiago, como está escrito mais acima, e eu sou um iniciante em programação. Fiz um curso técnico de 3 anos de desenvolvimeto de sistemas na Etec Jardim Ângela e pratiquei das mais diversas matérias sobre programação por lá. Atualmente estou me graduando pela Descomplica no curso de Ciência da Computação com ênfase em full-stack dev além de um curso complementar de full-stack na Udemy.</p>
+</div>
+</section>
+<br>
+<section class="org">
+  <h2>Telas de projetos</h2>
+  <br>
+  <img src="img/calc.jpeg" alt="">
+  <br>
+  <img src="img/tenis2.jpg" alt="">
+  <br>
+  <img src="img/tenis3.jpg" alt="">
+  <br>
+  <img src="img/tenis4.jpg" alt="">
+</section>
+
+<footer class="social-container">
+  <div class="social-item facebook-item">
+    <a href="http://facebook.com/victor.thiago37" target="_blank" class="social-link">
+    <i class="fa-brands fa-facebook"></i>
+    </a>
+  </div>
+        <div class="social-item instagram-item">
+          <a href="http://instagram.com/victor.thiago23" target="_blank" class="social-link">
+          <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="social-item linkedin-item">
+          <a href="http://instagram.com/victor.thiago23" target="_blank" class="social-link">
+              <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+       <div class="social-item whatsapp-item">
+              <a href="https://wa.me/+5511992279850" target="_blank" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            
+</footer>
+  </body>
+</html>
