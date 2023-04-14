@@ -122,3 +122,21 @@
 .radio label input[type=radio]:checked + span{
   color: #e9dcb1;
 }
+
+.radio label span {
+  z-index: 1;
+}
+.radio label input[type=radio] {
+  all: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.radio label input[type=radio]:checked {
+  background-color: #034e20;
+}
+.radio label input[type=radio]:checked + span{
+  color: #e9dcb1;
+}
