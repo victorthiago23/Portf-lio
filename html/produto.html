@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis</title>
+    <link rel="stylesheet" href="../css/tenis.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" type="image/png" href="../img/victor-edit.png"/>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/051588164a.js" crossorigin="anonymous"></script>
+    <script src="file:///E:/jquery.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Victor Thiago</div>
+        <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+          <li><a href="../index.html" translate="no">Home</a></li>
+          <li>
+            <label for="btn-1" class="show">Projetos +</label>
+            <a href="#">Projetos</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="calculadora.html">Calculadora</a></li>
+              <li><a href="form.html">Formulário</a></li>
+              <li><a href="produto.html">Página de Produto</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Habilidades</a>
+            <input type="checkbox" id="btn-2">
+      </nav>
+
+
+      <div class="card">
+        <input name='slide' class="slide" type="radio" >
+        <input name='slide' class="slide" type="radio" checked>
+        <input name='slide' class="slide" type="radio" >
+        <input name='slide' class="slide" type="radio" >
+        <div class="slider-content">
+          <div class="slider-item"><img src="../img/tenis1.jpg" style="width:100%"></div>
+          <div class="slider-item"><img src="../img/tenis2.jpg" style="width:100%"></div>
+          <div class="slider-item"><img src="../img/tenis3.jpg" style="width:100%"></div>
+          <div class="slider-item"><img src="../img/tenis4.jpg" style="width:100%"></div>
+      </div>
+        <h1>Tênis Palmeiras</h1>
+        <p class="price">R$299,99</p>
+        <p>O modelo Roma carrega o símbolo do Palmeiras e também todos os dezesseis títulos nacionais que o Verdão conquistou na sua história. </p>
+        <form action="../php/salvar_carrinho.php" method="post">
+         <div id="input-option356">
+          <div class="radio">
+          <label for="">
+            <input name='tamanho' class="tam" type="radio" value="38">
+            <span>38</span>
+          </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input name='tamanho' class="tam" type="radio" value="39">
+              <span>39</span>
+            </label>
+            </div>
+            <div class="radio">
+              <label for="">
+                <input name='tamanho' class="tam" type="radio" value="40">
+                <span>40</span>
+              </label>
+              </div>
+              <div class="radio">
+                <label for="">
+                  <input name='tamanho' class="tam" type="radio" value="41">
+                  <span>41</span>
+                </label>
+                </div>
+                <div class="radio">
+                  <label for="">
+                    <input name='tamanho' class="tam" type="radio" value="42">
+                    <span>42</span>
+                  </label>
+                  </div>
+                  <div class="radio">
+                    <label for="">
+                      <input name='tamanho' class="tam" type="radio" value="43">
+                      <span>43</span>
+                    </label>
+                    </div>
+         </div>
+        <p><input type="submit" class="enviar" id="carrinho" name="carrinho" onclick="Enviar();" value="Adicionar"><p>
+      </form>
+      </div>
+
+      <script>
+      function Enviar(){
+	
+        var carrinho = document.getElementById("carrinho");	
+        
+        //!=representa sinal de diferente
+        if(carrinho.value !=""){
+          alert('Os seus dados foram encaminhados com sucesso.');	
+          
+        }	
+      }	
+    </script>
+
+      <script>
+        $('.icon').click(function(){
+          $('span').toggleClass("cancel");
+        });
+      </script>
+</body>
+</html>

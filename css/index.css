@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+
+.org h2{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.org img{
+  height: 40%;
+  width: 60%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.circle img{
+  margin-top: 75px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-left: 30px;
+}
+
+.circle{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: center;
+  display: flex;
+}
+
+.circle div{
+  flex-direction: row;
+  margin-top: 100px;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 150px;
+  padding: 0 10px;
+}
+
+.circle div p{
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+nav{
+  background: #1b1b1b;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+nav ul li a:hover{
+  color: cyan;
+
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 200px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+.social-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  position: absolute;
+}
+
+.social-item{
+  padding: 1em;
+}
+
+.social-link{
+  width: 3.5em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 1em;
+  box-shadow: 0px 5px -3px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+.social-link::before{
+  content: "";
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: 95%;
+  left: -195%;
+  transform: rotate(45deg);
+  z-index: 1;
+  animation-duration: 0.65s;
+  transform-origin: bottom;
+}
+
+.social-link:hover::before{
+  animation-name: animate;
+  animation-timing-function: ease;
+  top: -54%;
+  left: -80%;
+}
+
+.social-link i{
+  font-size: 1.7em;
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+
+.social-link:hover i{
+  color: #fff;
+  z-index: 2;
+  transform: scale(1);
+}
+
+.social-link:active i{
+  transform: scale(0.9);
+}
+
+.facebook-item .social-link::before{
+  background-color: #3b5998;
+}
+
+.facebook-item i{
+  color: #3b5998;
+}
+
+.instagram-item .social-link::before{
+  background-color: #e1306c;
+}
+
+.instagram-item i{
+  color: #e1306c;
+}
+
+.linkedin-item .social-link::before{
+  background-color: #0e76a8;
+}
+
+.linkedin-item i{
+  color: #0e76a8;
+}
+
+.whatsapp-item .social-link::before{
+    background-color: #34af23;
+}
+
+.whatsapp-item i{
+    color: #34af23;
+}
+
+
+@keyframes animate{
+  0% {top: 95%; left: -195%;}
+  60% {top: -75%; left: -50%;}
+  100% {top: -54%; left: -80%;}
+}
+
+@media screen and (max-width: 769px) {
+  .org img{
+    width: 100%;
+    height: 30%;
+  }
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+
+  .circle{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+  .circle div{
+    flex-direction: column;
+    align-items: center;
+      text-align: center;
+  }
+}
+
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+p{
+  font-size: 18px;
+  font-weight: 400;
+
+}

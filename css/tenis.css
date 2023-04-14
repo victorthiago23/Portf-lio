@@ -1,0 +1,124 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 20px;
+  }
+  
+  .enviar {
+    display: block;
+    border: none;
+    outline: 0;
+    padding: 5px;
+    color: white;
+    background-color: #1b1b1b;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .enviar:hover {
+    color: cyan;
+    background-color: #000;
+  }
+
+  .slide{
+    display: inline;
+    width: 16px;
+  }
+
+  .card{
+    overflow: hidden;
+
+}
+.card > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+
+}
+
+.card > .slider-content > .slider-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+  
+.card > input:nth-child(1):checked ~ .slider-content{
+  transform: translateX(0%);
+}
+
+.card > input:nth-child(2):checked ~ .slider-content{
+  transform: translateX(-100%);
+}
+
+.card > input:nth-child(3):checked ~ .slider-content{
+  transform: translateX(-200%);
+}
+
+.card > input:nth-child(4):checked ~ .slider-content{
+  transform: translateX(-300%);
+}
+
+.input-option356 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-option356:after {
+  content: "";
+  clear: both;
+}
+
+.radio {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  height: 30px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 3px;
+}
+
+.radio + .radio {
+  margin-left: 3px;
+}
+
+.radio label {
+  background: #fff no-repeat center center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.radio label span {
+  z-index: 1;
+}
+.radio label input[type=radio] {
+  all: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.radio label input[type=radio]:checked {
+  background-color: #034e20;
+}
+.radio label input[type=radio]:checked + span{
+  color: #e9dcb1;
+}

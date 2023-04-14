@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" type="image/png" href="../img/victor-edit.png"/>
+    <script src="https://kit.fontawesome.com/051588164a.js" crossorigin="anonymous"></script>
+    <script src="file:///E:/jquery.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Victor Thiago</div>
+        <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+          <li><a href="../index.html" translate="no">Home</a></li>
+          <li>
+            <label for="btn-1" class="show">Projetos +</label>
+            <a href="#">Projetos</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="calculadora.html">Calculadora</a></li>
+              <li><a href="form.html">Formulário</a></li>
+              <li><a href="produto.html">Página de Produto</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Habilidades</a>
+            <input type="checkbox" id="btn-2">
+      </nav>
+  
+      <script>
+        $('.icon').click(function(){
+          $('span').toggleClass("cancel");
+        });
+      </script>
+
+      <h1>Formuláro do Portifólio</h1>
+
+      <section>
+        <div class="form">
+        <form action="../php/salvar_formulario.php" method="post">
+            <label for="nome" id="label">Digite seu nome:</label>
+            <input type="text" name="nome" id="nomeid" class="nome">
+                <br>
+            <label for="email" id="label">Digite seu e-mail:</label>
+            <input type="email" name="email" class="email">
+                <br>
+            <label for="data" id="label">Digite sua idade:</label>
+            <input type="date" name="data" class="data">
+                <br>
+            <label for="" id="label">De qual projeto você gostou mais?</label>
+            <br>
+            
+            <input type="radio" name="gostou" value="Spotify" class="spotify">
+            <label for="spotify">Clone do Spotify</label>
+            <br>
+            <input type="radio" name="gostou" value="Formulário" class="formul">
+            <label for="formul">Formulário</label>
+            <br>
+            <input type="radio" name="gostou" value="Produto" class="produto">
+            <label for="produto">Página de produto</label>
+                <br>
+                <br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+            <script>
+                $(document).ready(function () {
+    $('input[type=radio]').change(function() {
+        $('input[type=radio]:checked').not(this).prop('checked', false);
+    });
+});
+            </script>
+
+            <label for="" id="label">Qual outro clone eu poderia fazer?</label>
+            <input type="text" name="clone" class="clone">
+            <br>
+
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar"/>
+        </form>
+    </div>
+      </section>
+
+      <script>
+      function Enviar(){
+	
+        var nome = document.getElementById("nomeid");	
+        
+        //!=representa sinal de diferente
+        if(nome.value !=""){
+          alert('Obrigado sr(a) '+nome.value+' os seus dados foram encaminhados com sucesso.');	
+          
+        }	
+      }	
+    </script>
+</body>
+</html>
