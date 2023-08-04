@@ -53,6 +53,7 @@ section.sobre{
 }
 
 .extras{
+    z-index: -1;
     position: absolute;
     bottom:-450px;
     right:-500px;
