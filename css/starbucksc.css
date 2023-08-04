@@ -109,14 +109,22 @@ section.sobre{
 
 @media screen and (max-width: 769px) {
 
+    html,body{
+        height:100%;
+        overflow-y: auto;
+        overflow-x:auto;
+    }
+
     .center{
         display: flex;
         flex-direction: row;
+        text-align: center;
     }
 
-   .sobre{
-    
-   }
+    .extras{
+        background-color: #42260f;
+    }
+   
 }
 
 @media screen and (max-width: 568px) {
@@ -124,7 +132,7 @@ section.sobre{
     .center{
         display: flex;
         padding: 10px;
-        overflow-y: scroll;
+        margin: 0 auto;
     }
 
     .logo{
@@ -138,10 +146,18 @@ section.sobre{
     .menu{
         display: flex;
         padding-top: 10px;
-        text-align: center;
-        justify-content: start;
+        justify-content: center;
+        width: 100%;
         flex-direction: row;
     }
+
+    .menu > a:hover{
+        border-bottom: 1px solid #017143;
+    }
+
+    .extras img{
+        visibility: hidden;
+       }
 
     .menu > a:nth-child(4){
         padding-left: 10%;
