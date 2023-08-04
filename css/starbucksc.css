@@ -123,6 +123,7 @@ section.sobre{
     .center{
         display: flex;
         padding: 10px;
+        overflow-x: scroll;
     }
 
     .logo{
